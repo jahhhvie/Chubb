@@ -1,0 +1,50 @@
+@mixin font-face($style-name, $file, $family, $category:"") {
+    $filepath: "fonts/" + $family + "/" + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf")  format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+    }
+    %#{$style-name} {
+        font: {
+            @if $category != "" {
+                family: "#{$style-name}", #{$category};
+            }
+            @else {
+                family: "#{$style-name}";
+                weight: normal;
+            }
+        }
+    }
+};
+
+@include font-face('raleway light', 'raleway-light-webfont','raleway-light', 'sans-serif');
+
+*{
+    text-decoration:none;
+    list-style-type:none;
+    margin: 0;
+    font-family: 'raleway light', sans-serif;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+.nav{
+    color:#fff;
+    a{
+        color:#fff;
+    }
+}
+
+
+    #particles-js{
+        width:100%;
+        height:60px;
+        background:#000;
+    }   
+
+
+
