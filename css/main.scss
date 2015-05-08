@@ -60,7 +60,7 @@ html,body{
 
     #particles-js{
         width:100%;
-        height:650px;
+        height:50%;
         background:#1C1F26;
         
     }   
@@ -68,7 +68,7 @@ html,body{
 .about{
     width:100%;
     height:75%;
-    background:url("../img/autobahn.jpg") fixed center repeat;
+    background:url("../img/autobahn.jpg") fixed center no-repeat;
     h1{
         font-size:75px;
         padding:10px 0 20px 0; 
@@ -89,6 +89,45 @@ html,body{
         top: 50%;
         transform: translateY(-50%);
     }
+}
+
+.work{
+    width:100%;
+    height:75%;
+    background:#5e1f20;
+}
+
+.full-wrapper{
+    width:100%;
+    height:auto;
+    top:50%;
+    transform: translateY(-50%);
+    position:relative;
+    h1,p{
+        text-align:center;
+        margin-bottom:75px;
+        color:#fff;
+
+    }
+}
+
+.one-fourth{
+   width:23%;
+   display:inline-block;
+   padding:10px;
+   p,h3{
+    text-align:center;
+    color:#fff;
+   }
+   p{
+    font-size:12px;
+   }
+   img{
+    vertical-align:center;
+    display:block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+   }
 }
 
 
