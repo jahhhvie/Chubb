@@ -12,10 +12,6 @@ html, body {
   width: 100%;
   height: 100%; }
 
-.wrapper {
-  width: 100%;
-  height: 100%; }
-
 .header {
   position: relative; }
   .header h1 {
@@ -42,8 +38,11 @@ html, body {
 
 .about {
   width: 100%;
-  height: 75%;
-  background: url("../img/autobahn.jpg") fixed center no-repeat; }
+  height: 75%; }
+  .about .bcg {
+    width: 100%;
+    height: 100%;
+    background: url("../img/autobahn.jpg") fixed center no-repeat; }
   .about h1 {
     font-size: 75px;
     padding: 10px 0 20px 0; }
@@ -64,7 +63,7 @@ html, body {
 
 .work {
   width: 100%;
-  height: 75%;
+  height: 50%;
   background: #5e1f20; }
 
 .full-wrapper {
@@ -92,3 +91,43 @@ html, body {
     display: block;
     margin: 0 auto;
     padding-bottom: 10px; }
+
+.bye {
+  width: 100%;
+  height: 100%;
+  background: url("../img/venice.jpg") fixed center no-repeat; }
+  .bye .end {
+    width: 100%;
+    height: 100%; }
+    .bye .end h1 {
+      font-size: 75px;
+      margin-bottom: -25px; }
+    .bye .end h1, .bye .end p {
+      text-align: center;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      position: relative;
+      padding: 20px; }
+
+.social {
+  width: 100%;
+  height: 3%;
+  background: #4cccc1; }
+  .social ul {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 35%; }
+  .social li {
+    display: inline-block; }
+  .social i {
+    color: #ff8534;
+    transition: color 0.5s ease; }
+  .social i:hover {
+    color: #024039; }

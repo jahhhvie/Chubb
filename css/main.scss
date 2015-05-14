@@ -32,11 +32,6 @@ html,body{
     height:100%;
 }
 
-.wrapper{
-    width:100%;
-    height:100%;
-}
-
 .header{
     position:relative;
     h1{
@@ -68,7 +63,11 @@ html,body{
 .about{
     width:100%;
     height:75%;
-    background:url("../img/autobahn.jpg") fixed center no-repeat;
+    .bcg{
+        width:100%;
+        height:100%;
+        background:url("../img/autobahn.jpg") fixed center no-repeat;      
+    }
     h1{
         font-size:75px;
         padding:10px 0 20px 0; 
@@ -93,7 +92,7 @@ html,body{
 
 .work{
     width:100%;
-    height:75%;
+    height:50%;
     background:#5e1f20;
 }
 
@@ -102,7 +101,7 @@ html,body{
     height:auto;
     top:50%;
     transform: translateY(-50%);
-    position:relative;
+    position:relative;    
     h1,p{
         text-align:center;
         margin-bottom:75px;
@@ -130,6 +129,55 @@ html,body{
    }
 }
 
+.bye{
+    width:100%;
+    height:100%;
+    background:url("../img/venice.jpg") fixed center no-repeat;
+     .end{
+        width:100%;
+        height:100%;
+        h1{
+            font-size:75px;
+            margin-bottom:-25px;
+        }
+        h1,p{
+            text-align:center;
+            color:#fff;
+            background:rgba(0,0,0,.7);
+            padding:10px;
+            width:50%;
+            margin-left:auto;
+            margin-right:auto;
+            top:50%;
+            transform:translateY(-50%);
+            position:relative;
+            padding:20px;
+        }
+     }
+}
+
+.social{
+    width:100%;
+    height:3%;
+    background:#4cccc1;
+    ul{
+        display:block;
+        text-align:center;
+        position:relative;
+        top:35%;
+
+    }
+    li{
+        display:inline-block;
+    }
+    i{
+        color:#ff8534;
+        transition:color 0.5s ease;   
+    }
+    i:hover{
+        color:#024039;
+    }
+}
 
 
 
